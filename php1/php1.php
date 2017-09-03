@@ -1,5 +1,6 @@
 <?php
 $a = 1;
 $b = 2;
-$c = $a + $b;
-echo 'a+b=' . $c;
+$d = 10;
+$c = $a + $b + $d;
+echo 'a+b+d=' . $c;
