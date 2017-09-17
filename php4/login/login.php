@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Document2</title>
 </head>
 <body>
 <form action="check.php" method="get">
