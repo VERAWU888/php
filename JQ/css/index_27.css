@@ -1,0 +1,14 @@
+.box1,.box2,.box3{
+	width: 100px;
+	height: 100px;
+	display: none;
+}
+.box1{
+	background: #FF4500	;
+}
+.box2{
+	background: #B22222;
+}
+.box3{
+	background: #C71585;
+}
