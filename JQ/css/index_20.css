@@ -1,0 +1,20 @@
+.box{
+	width: 360px;
+	height:360px;
+	border: 5px solid green;
+	position: relative;
+	overflow: hidden;
+}
+.box:hover .title{
+	bottom: 0;
+}
+.title{
+	transition: all 1s;
+	background:#000;
+	color: #fff;
+	text-align: center;
+	padding:5px 0;
+	width: 100%;
+	position:absolute;
+	bottom: -32px;
+}
