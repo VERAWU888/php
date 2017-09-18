@@ -14,4 +14,4 @@ Class 選擇
 $('.header').hide();
 ID 選擇
 
-$('#box').hide();
+$('#box').hide();*/

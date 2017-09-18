@@ -14,3 +14,6 @@ $(document).ready(function() {
 
 	//單行註解
 
+	/*多行~
+	~~~~~~註解*/
+
