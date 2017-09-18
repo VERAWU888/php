@@ -20,4 +20,11 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('.content p').css('font-size','16px');
 	});
+
+	//close效果
+	$('.ad-close').click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		$('.ad').hide();
+	});
 });
