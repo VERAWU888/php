@@ -59,6 +59,33 @@ table {
   margin-bottom: 1em;
 }
 
+/*以下是43的 a連結的 css*/
+
+a {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+/*以下是44的css*/
+
+td,th{
+  border: 2px solid #000;
+  color:green;
+  padding: 5px;
+  font-size: 20px;
+  width: 70px;
+  height: 50px;
+}
+.remove {
+  background: gray;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  
+}
+
 
 
 
