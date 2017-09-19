@@ -47,20 +47,35 @@ table {
   border-spacing: 0;
 }
 
-.menu {
-  width: 500px;
+
+
+.cart {
+  width: 300px;
   margin:20px auto;
 }
-.menu li {
-  padding: 5px;
-  border: 1px solid;
+.cart h2 {
   margin-bottom: 1em;
+  font-size: 19.2px;
 }
-.menu li:hover,.menu li.active {
+.cart li {
+  border: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 2em;
+}
+.cart li.active {
+  background: #0095D4;
+  color: #fff;
+}
+.addCart {
+  background: #0000CD;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.addCart:hover, .addCart.active {
   background: blue;
-  color:#fff;
 }
-
 
 
 
