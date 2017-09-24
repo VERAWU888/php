@@ -18,4 +18,30 @@ function count(oneNum,twoNum){
 	var total = oneNum + twoNum;
 	console.log('總價格 :'+total+"元");
 }
-count(8);*/
+count(8,10);*/
+
+//ch4-24:全域與區域變數
+
+//全域變數(是在function 之外)
+var total;
+
+function count(oneNum,twoNum){
+	total = oneNum * twoNum;
+	console.log("總價格" + total + "元")
+}
+count (8,10);
+console.log(total);
+
+/*function count(oneNum,twoNum){
+	//區域變數(是在function 之內，並且running完function的內容，就會消滅掉了)
+	var total = oneNum * twoNum;
+	console.log("總價格" + total + "元")
+}
+count (8,10);
+console.log(total);*/
+
+//function有hositing的概念，因為function不論設在開頭還是下面，都會優先執行function的內容
+
+
+
+
