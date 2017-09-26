@@ -32,3 +32,41 @@ el2.setAttribute('id','strId');
 var el = document.getElementById('main');
 var str = '<h1 class="orange">5678</h1>';
 el.innerHTML = str+str;
+
+//ch8-76: innerHTML
+var el = document.querySelector('.list');
+var link = 'http://www.books.com.tw';
+var name = '書書';
+
+el.innerHTML = '<li><a href="'+ link +'">'+name+'</a></li>';
+
+
+//ch8-77: innerHTML與for的運用
+var farms = [
+{
+	farmer: '伯斯',
+	dogs: ['球球','皮皮'],
+},
+{
+	farmer: '理查',
+	dog: '酷樂'
+}
+];
+var el = document.querySelector('.list2');
+var farmLen = farms.length;
+console.log(farmLen);
+var str = '';
+for (var i=0;i<farmLen;i++){
+	var content = '<li>'+ farms[i].farmer +'</li>';
+	str+=content;
+}
+el.innerHTML = str;
+
+
+
+
+
+
+
+
+
