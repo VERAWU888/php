@@ -63,6 +63,32 @@ for (var i=0;i<farmLen;i++){
 el.innerHTML = str;
 
 
+//ch8-78:createElement 寫法
+var str = document.createElement('em');
+str.textContent = '1234';
+str.setAttribute('class','pink');
+//增加子節點
+document.querySelector('.title2').appendChild(str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

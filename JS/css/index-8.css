@@ -1,9 +1,13 @@
 
-#strId{
+#strId {
 	color: blue;
 	font-size: 48px;
 }
 
-.orange{
+.orange {
 	color: orange;
+}
+
+.pink {
+	color: pink;
 }
