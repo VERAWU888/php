@@ -71,11 +71,43 @@ str.setAttribute('class','pink');
 document.querySelector('.title2').appendChild(str);
 
 
+//ch8-79:createElement與for的運用
+var farms = [
+{
+	farmer: '伯斯',
+	dogs: ['球球','皮皮'],
+},
+{
+	farmer: '理查',
+	dog: '酷樂'
+},
+{
+	farmer: '艾克',
+	dogs: ['琪琪','貝利','溫斯頓']
+}
+];
+var el = document.querySelector('.list3');
+var farmLeng = farms.length;
+for(var i=0;i<farmLeng;i++){
+	var str = document.createElement('li');
+	str.textContent = farms[i].farmer;
+	el.appendChild(str);
+
+}
 
 
+//ch8-80:innerHTML被入侵的例子
 
+// 可以信任的資料
+var farms = [];
 
+document.createElement('li');
 
+document.getElementById('send').onclick = function(){
+  var str = document.getElementById('content').value;
+   
+  document.getElementById('main2').innerHTML = str;
+}
 
 
 
