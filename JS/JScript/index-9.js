@@ -31,13 +31,33 @@ elAd.addEventListener('click',function(){
 },false);
 
 //ch8-88:Event Bubbling, Event Capturing差異
+//ch8-89:stopPropagation 中止冒泡事件
 var elbox = document.querySelector('.box');
 elbox.addEventListener('click',function(){
-	alert('box');
-	console.log('box');
+	alert('你沒有點擊到 box');
+	console.log('你沒有點擊到 box');
 },false);
-//false - 從指定元素往外找
 
+var elbox = document.querySelector('.point');
+elbox.addEventListener('click',function(e){
+	e.stopPropagation();
+	alert('point');
+	console.log('point');
+},false);
+//false (事件氣泡 Event Bubbling)- 從指定元素往外層找
+//true (事件捕捉 Event Capturing)- 從最外層往裡面找到指定元素
+//若不寫的話，預設是false
+//stopPropagation 停止監聽的指令，阻止執行其它的指令進行下一個行為，只執行想要的指令就好
+
+//ch8-90:preventDefault 取消預設觸發行為
+var el = document.querySelector('.link');
+el.addEventListener('click',function(e){
+	//取消默認行為
+	//原本的連結會到指定的網頁
+	//submit 按鈕，先透過js去查詢表單有無錯誤, 在post去傳送
+	e.preventDefault();
+	console.log('test');
+})
 
 
 
