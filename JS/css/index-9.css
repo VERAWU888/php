@@ -1,3 +1,42 @@
+.box {
+	width: 100px;
+	height: 100px;
+	background: #000;
+	margin:10px;
+}
+.point {
+	width: 50px;
+	height: 50px;
+	background: red;
+	margin:1.25em;
+	
+}
+
+.link {
+	margin-top: 900px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.alink {
+	width: 300px;
+	height: 150px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding-top:100px;
+	border: 1px solid red;
+}
+
+
+.box2 {
+	width: 150px;
+	height: 150px;
+	background: green;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -55,29 +94,7 @@ html{
     box-sizing: border-box;
 }
 
-.box {
-	width: 100px;
-	height: 100px;
-	background: #000;
-	margin:10px;
-}
-.point {
-	width: 50px;
-	height: 50px;
-	background: red;
-	margin:1.25em;
-	
-}
 
-.link {
-	margin-top: 900px;
-	display: block;
-}
-
-.alink {
-	padding-top:100px;
-	border: 1px solid red;
-}
 
 .wrap{
     background: url(../img/desktop.png) 50% 50%;
@@ -108,3 +125,6 @@ html{
 .wrap-inner input[type=text]{
     width: 30px;
 }
+
+
+

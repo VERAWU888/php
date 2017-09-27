@@ -127,6 +127,13 @@ var coke = document.getElementById('cokeNumId');
 coke.addEventListener('blur',checkContent,false);
 
 
+//ch9-95: mouse 當滑鼠滑入指定內容時觸發
+
+//mousemove
+var el = document.querySelector('.box2');
+el.addEventListener('mousemove',function(){
+	alert('green box');
+},false)
 
 
 
