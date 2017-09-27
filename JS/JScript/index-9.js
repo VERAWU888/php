@@ -59,11 +59,45 @@ el.addEventListener('click',function(e){
 	console.log('test');
 })
 
+//ch9-91: e.target 了解目前所在元素位置
+var el = document.querySelector('.header');
+
+el.addEventListener('click',function(e){
+	console.log(e.target.nodeName);
+},false);
 
 
+//ch9-92:change
+var area = document.getElementById('areaId');
+var list = document.querySelector('.list');
 
+var country = [
+    {
+        farmer: '克里斯',
+        place: '前鎮區'
+    },
+    {
+        farmer: '羅伯',
+        place: '苓雅區'
+    }
+    ,{
+        farmer: '強森',
+        place: '苓雅區'
+    }
+]
+var len = country.length;
 
-
+function updateList(e){
+    var select = e.target.value;
+    var str='';
+    for(var i=0;len>i;i++){
+        if(select== country[i].place){
+            str += '<li>'+country[i].farmer+'</li>'
+        }
+    }
+    list.innerHTML = str;
+}
+area.addEventListener('change',updateList,false)
 
 
 
