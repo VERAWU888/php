@@ -82,7 +82,7 @@ function checkList2(e){
 list2.addEventListener('click',checkList2);
 
 
-//ch10-104: splice 刪除array資料
+//ch10-105: splice 刪除array資料
 var shops = [
 {
 	shopkeeper: '貝拉'
@@ -117,7 +117,7 @@ function checkList3(e){
 
 shop.addEventListener('click',checkList3,false);
 
-//
+
 
 
 
