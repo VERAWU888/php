@@ -71,6 +71,7 @@ function updateList(){
 	list2.innerHTML = str;
 }
 updateList();
+//確認點擊的農夫是誰
 function checkList2(e){
 	var num = e.target.nodeName;
 	if(num !=="LI"){return}
@@ -80,6 +81,43 @@ function checkList2(e){
 
 list2.addEventListener('click',checkList2);
 
+
+//ch10-104: splice 刪除array資料
+var shops = [
+{
+	shopkeeper: '貝拉'
+},
+{
+	shopkeeper: '伊芙'
+},
+{
+	shopkeeper: '娜塔莉'
+}
+];
+
+var shop = document.querySelector('.shop');
+//更新店家資訊
+function updateList3(){
+	var str = '';
+	var len = shops.length;
+	for(var i=0;len>i;i++){
+		str+='<li data-num="'+i+'">'+shops[i].shopkeeper+'</li>'
+	}
+	shop.innerHTML = str;
+}
+updateList3();
+//splice 刪除店家資訊, updateList3()更新店家資料，查看末被刪除的店家
+function checkList3(e){
+	var num = e.target.dataset.num;
+	//console.log(e.target.nodeName);
+	if(e.target.nodeName !=="LI"){return}
+	shops.splice(num,1);
+	updateList3();
+}
+
+shop.addEventListener('click',checkList3,false);
+
+//
 
 
 
