@@ -24,7 +24,7 @@
 	height: 150px;
 	margin-left: 20px;
 	margin-bottom: 20px;
-	padding-top:100px;
+	padding:70px;
 	border: 1px solid red;
 }
 
@@ -35,6 +35,16 @@
 	background: green;
 	margin-left: 20px;
 	margin-bottom: 50px;
+}
+
+.list2 {
+	width: 400px;
+	height: 150px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	padding:20px 40px;
+
+	border: 2.5px solid orange;
 }
 
 
@@ -71,9 +81,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }

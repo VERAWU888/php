@@ -136,6 +136,17 @@ el.addEventListener('mousemove',function(){
 },false)
 
 
+//ch9-98:監聽優化，從父元素來監聽子元素
+
+//點擊來顯示li裡面的內容
+var list = document.querySelector('.list2');
+list.addEventListener('click',checkName,false)
+function checkName(e){
+	if(e.target.nodeName !== "LI"){return};
+	console.log(e.target.textContent);
+	//console.log(e.target.nodeName);
+}
+
 
 
 
