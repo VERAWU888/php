@@ -119,7 +119,10 @@ shop.addEventListener('click',checkList3,false);
 
 
 
-
+//ch11-110:回上一頁功能實作
+document.getElementById('back').onclick = function(){
+	window.history.back();
+}
 
 
 
