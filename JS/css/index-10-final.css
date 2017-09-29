@@ -73,7 +73,7 @@ table {
     }
     .clearfix{
       overflow: auto;
-  zoom: 1;
+      zoom: 1;
     }
 
     .list {
