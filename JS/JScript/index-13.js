@@ -18,6 +18,8 @@
 //        空的資料
 
 //ch13-119 & 120: AJAX非同步觀念
+/*
+
 var xhr = new XMLHttpRequest();
 xhr.open('get','https://hexschool.github.io/ajaxHomework/data.json',true);
 // true: 非同步，它不會等資料傳回來，就讓程式繼續往下跑，等到回傳指令才會自然回傳
@@ -36,12 +38,116 @@ xhr.onload = function(){
 // 3. 回傳資料到自己的瀏覽器
 // 4. 拿到資料後再看要怎麼處理
 
+*/
+
+//ch13-121: HTTP狀態碼
+//status:200 - 資料有正確回傳，有撈到
+//status:404 - 資料讀取錯誤，沒有撈到
+/*
+var xhr = new XMLHttpRequest();
+xhr.open('get','https://hexschool.github.io/ajaxHomework/data.json',true);
+xhr.send(null);
+
+xhr.onload = function(){
+	console.log(xhr.responseText);
+	if(xhr.status == 200){
+		var str = JSON.parse(xhr.responseText);
+		document.querySelector('.message').textContent = str[0].name;
+	}else{
+		console.log('資料讀取錯誤！！');
+	}
+}
+*/
+
+//ch13-122: 什麼是Cross-Origin Resource Sharing(CORS)
+
+//CORS - 是否可以跨網域撈取資料,若網址未開啟CORS,便不能撈取資料了
+//www.test-cors.org 可以幫忙檢查是否有開啟CORS
 
 
+//ch13-123:使用JSONP進行跨網域存取
+
+/*
+function getData(data) {
+ console.log(data);
+ document.querySelector('.infromation').textContent = data[0].SiteName;
+}
+*/
 
 
+//ch13-126:AJAX POST寫法
+
+ //註冊(練習時，帳號要改，不然會顯示帳號已註冊了)
+var xhr = new XMLHttpRequest();
+xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signup',true);
+xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xhr.send('email=rita@gail.com&password=ilovey');
 
 
+/* 
+//登入
+var xhr = new XMLHttpRequest();
+xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signin',true);
+xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xhr.send('email=rita@gail.com&password=ilovey');
+*/
+
+
+//ch13-128:AJAX JSON POST寫法
+
+//註冊(練習時，帳號要改，不然會顯示帳號已註冊了)
+var account = {
+	email: 'paino@gmail.com',
+	password:'nn888666'
+}
+var xhr = new XMLHttpRequest();
+xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signup',true);
+xhr.setRequestHeader('Content-type','application/json');
+var data = JSON.stringify(account);
+xhr.send(data);
+
+/*
+//登入
+var account = {
+	email: 'paino@gmail.com',
+	password:'nn888666'
+}
+var xhr = new XMLHttpRequest();
+xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signin',true);
+xhr.setRequestHeader('Content-type','application/json');
+var data = JSON.stringify(account);
+xhr.send(data);
+
+*/
+
+//ch13-129:AJAX 實物範例設計
+
+var send = document.querySelector('.send');
+send.addEventListener('click',singup,false);
+
+function singup(){
+	var emailStr = document.querySelector('.account').value;
+	var passwordStr = document.querySelector('.password').value;
+	var account = {};
+	account.email = emailStr;
+	account.password = passwordStr;
+
+	var xhr = new XMLHttpRequest();
+	xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signup',true);
+	xhr.setRequestHeader('Content-type','application/json');
+	var data = JSON.stringify(account);
+	xhr.send(data);
+	xhr.onload = function(){
+		var callbackData = JSON.parse(xhr.responseText);
+		console.log(callbackData);
+		var veriStr = callbackData.message;
+		if(veriStr =="帳號註冊成功"){
+			alert('帳號註冊成功！！');
+		}else{
+			alert('帳號註冊失敗！！')
+		}
+	}
+}
 
 
 

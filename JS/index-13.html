@@ -8,8 +8,41 @@
 	<title>ch13:AJAX</title>
 </head>
 <body>
-  
+
   <ul class="message"></ul>
-    <script src="JScript/index-13.js"></script>
+
+  <div class="infromation"></div>
+
+<!-- JSONP -->
+<!-- JSONP 只能做 get, 不能做 post -->
+<!-- <script src="http://opendata.epa.gov.tw/ws/Data/REWXQA/?$orderby=SiteName&$skip=0&$top=1000&format=json&callback=getData"></script> -->
+
+<!-- ch13-125:傳統表單輸入介紹 -->
+<!--  index-13.html後面接參數，？，連接多個內容時，會用&  -->
+<!--  index-13.html?account=gigi&password=nbn234  -->
+
+  <!-- <form action="index-13.html"> 
+    帳號：
+    <input type="text" name="account">
+    <br>
+    密碼：
+    <input type="password" name="password">
+    <br>
+    <input type="submit" value="送出">
+  </form>   --> 
+
+
+<!-- ch13-129: AJAX 實務範例 -->
+  帳號：
+  <input type="text" class="account">
+  <br>
+  密碼：
+  <input type="password" class="password">
+  <br>
+  <input type="button" class="send" value="送出">
+  
+
+
+    <script type="text/javascript" src="JScript/index-13.js"></script>
 </body>
 </html>
