@@ -76,20 +76,21 @@ table {
     }
 
     .hero{
-        height: 400px;
+        
         background-image: url('https://image.shutterstock.com/z/stock-photo-grilled-meat-and-vegetables-on-rustic-wooden-table-626267978.jpg');
         background-size: cover;
+        height: 694px;
         background-position: top center
 
     }
     .section2{
         background: lightgreen;
-        opacity: 0.8;
         text-align: center;
         color: #fff;
         font-size: 80px;
         padding: 100px;
     }
+    
 
 
 
