@@ -122,7 +122,7 @@ xhr.send(data);
 
 //ch13-129:AJAX 實物範例設計 註冊 
 
-/*
+
 var send = document.querySelector('.send');
 
 send.addEventListener('click',signup,false);
@@ -151,21 +151,22 @@ function signup(){
         }
     }
 }
-*/
+
+
 
 //ch13-130:AJAX 實物範例設計 登入
 
 
-var send = document.querySelector('.send');
+var submit = document.querySelector('.submit');
 
-send.addEventListener('click',signin,false);
+submit.addEventListener('click',signin,false);
 
 function signin(){
-    var emailStr = document.querySelector('.account').value;
-    var passwordStr = document.querySelector('.password').value;
-    var account = {};
-    account.email = emailStr;
-    account.password = passwordStr;
+    var email2Str = document.querySelector('.email').value;
+    var password2Str = document.querySelector('.password2').value;
+    var account2 = {};
+    account2.email = email2Str;
+    account2.password2 = password2Str;
     
     var xhr = new XMLHttpRequest();
 	xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signin',true);
@@ -175,9 +176,9 @@ function signin(){
     xhr.onload = function(){
         var callbackData = JSON.parse(xhr.responseText);
         console.log(callbackData);
-        var veriStr = callbackData.message;
+        var veri2Str = callbackData.message;
 
-        if(veriStr =="登入成功"){
+        if(veri2Str =="登入成功"){
             alert('登入成功！！');
         }else{
             alert("此帳號不存在或帳號密碼錯誤！");
