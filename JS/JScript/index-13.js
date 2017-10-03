@@ -176,9 +176,9 @@ function signin(){
     xhr.onload = function(){
         var callbackData = JSON.parse(xhr.responseText);
         console.log(callbackData);
-        var veri2Str = callbackData.message;
+        var comfirmStr = callbackData.message;
 
-        if(veri2Str =="登入成功"){
+        if(comfirmStr =="登入成功"){
             alert('登入成功！！');
         }else{
             alert("此帳號不存在或帳號密碼錯誤！");
