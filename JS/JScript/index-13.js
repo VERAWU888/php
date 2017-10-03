@@ -171,14 +171,14 @@ function signin(){
     var xhr = new XMLHttpRequest();
 	xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signin',true);
 	xhr.setRequestHeader('Content-type','application/json');
-	var data = JSON.stringify(account);
+	var data = JSON.stringify(account2);
 	xhr.send(data);
     xhr.onload = function(){
         var callbackData = JSON.parse(xhr.responseText);
         console.log(callbackData);
-        var comfirmStr = callbackData.message;
+        var confirmStr = callbackData.message;
 
-        if(comfirmStr =="登入成功"){
+        if(confirmStr =="登入成功"){
             alert('登入成功！！');
         }else{
             alert("此帳號不存在或帳號密碼錯誤！");
