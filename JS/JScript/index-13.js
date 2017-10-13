@@ -123,34 +123,34 @@ xhr.send(data);
 //ch13-129:AJAX 實物範例設計 註冊 
 
 
-var send = document.querySelector('.send');
+// var send = document.querySelector('.send');
 
-send.addEventListener('click',signup,false);
+// send.addEventListener('click',signup,false);
 
-function signup(){
-    var emailStr = document.querySelector('.account').value;
-    var passwordStr = document.querySelector('.password').value;
-    var account = {};
-    account.email = emailStr;
-    account.password = passwordStr;
+// function signup(){
+//     var emailStr = document.querySelector('.account').value;
+//     var passwordStr = document.querySelector('.password').value;
+//     var account = {};
+//     account.email = emailStr;
+//     account.password = passwordStr;
     
-    var xhr = new XMLHttpRequest();
-    xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signup',true);
-    xhr.setRequestHeader('Content-type','application/json');
-    var data = JSON.stringify(account);
-    xhr.send(data);
-    xhr.onload = function(){
-        var callbackData = JSON.parse(xhr.responseText);
-        console.log(callbackData);
-        var veriStr =  callbackData.message;
+//     var xhr = new XMLHttpRequest();
+//     xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signup',true);
+//     xhr.setRequestHeader('Content-type','application/json');
+//     var data = JSON.stringify(account);
+//     xhr.send(data);
+//     xhr.onload = function(){
+//         var callbackData = JSON.parse(xhr.responseText);
+//         console.log(callbackData);
+//         var veriStr =  callbackData.message;
         
-        if(veriStr =="帳號註冊成功"){
-            alert('帳號註冊成功！！');
-        }else{
-            alert("帳號註冊失敗！");
-        }
-    }
-}
+//         if(veriStr =="帳號註冊成功"){
+//             alert('帳號註冊成功！！');
+//         }else{
+//             alert("帳號註冊失敗！");
+//         }
+//     }
+// }
 
 
 
@@ -162,16 +162,16 @@ var submit = document.querySelector('.submit');
 submit.addEventListener('click',signin,false);
 
 function signin(){
-    var email2Str = document.querySelector('.email').value;
-    var password2Str = document.querySelector('.password2').value;
-    var account2 = {};
-    account2.email = email2Str;
-    account2.password2 = password2Str;
+    var emailStr = document.querySelector('.email').value;
+    var passwordStr = document.querySelector('.password').value;
+    var account = {};
+    account.email = emailStr;
+    account.passwor = passwordStr;
     
     var xhr = new XMLHttpRequest();
 	xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signin',true);
 	xhr.setRequestHeader('Content-type','application/json');
-	var data = JSON.stringify(account2);
+	var data = JSON.stringify(account);
 	xhr.send(data);
     xhr.onload = function(){
         var callbackData = JSON.parse(xhr.responseText);
