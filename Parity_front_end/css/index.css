@@ -97,6 +97,58 @@ html {
   -webkit-text-size-adjust: 100%
 }
 
+/**/
+.header{
+  background: #C0C0C0;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.bar .topmenu{
+  height: 30px;
+  margin-top:20px;
+  background-color: #f6f6f6;
+}
+.bar ul{
+  float: left;
+}
+.bar ul li{
+  float: left;
+  margin: 5px;
+}
+.bar li a{
+  text-decoration: none;
+  font-size: 20px; 
+}
+.bar li img{
+  margin-right: 5px;
+  float: left;
+}
+.bar li span{
+  float: left;
+}
+.facebook span{
+  color:#667aad;
+  padding-right: 8px;
+}
+
+.topmenu ul{
+  float:right;
+}
+.topmenu ul li{
+  float:left;
+  margin-right: 15px;
+}
+.topmenu li a{
+  color:#667aad;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.clearfix{
+  clear:both;
+}
+
 /*search_bar*/
 form {
   position: relative;
@@ -104,6 +156,11 @@ form {
   margin: 70px auto 50px auto;
 }
 
+.logo{
+  float:left;
+  margin-top:10px;
+  margin-left:20px;
+}
 .search_product {
   width: 100%;
   height: 42px;
@@ -135,19 +192,19 @@ form {
 
 /*價格高低*/
 
-.topmenu{
+.midmenu{
     height:40px;
     margin-left: 50px; 
     margin-bottom: 10px;
 }
 
 
-.topmenu ul li{
+.midmenu ul li{
     float: left;   
 
 }
 
-.topmenu li a{  
+.midmenu li a{  
     display: block; 
     width: 120px; 
     color:#00cc99;
