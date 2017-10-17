@@ -85,78 +85,89 @@ input .search_product{
 }
 */
 body {
-  line-height: 1
+  line-height: 1;
+  width: 1260px;
 }
 body, html {
   font-family: Microsoft JhengHei, calibri, arial, helvetica, monospace, clean, sans-serif!important;
-  font-size: 16px
+  font-size: 16px;
 }
 
 html {
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
 }
 
 /**/
-.header{
+.header {
   background: #C0C0C0;
   margin: 0 auto;
-  width: 1000px;
+  width: 1260px;
 }
 
-.bar .topmenu{
+.bar .topmenu {
   height: 30px;
-  margin-top:20px;
+  margin-top: 20px;
   background-color: #f6f6f6;
+  text-align: center;
 }
-.bar ul{
+.bar ul {
   float: left;
 }
-.bar ul li{
+.bar ul li {
   float: left;
   margin: 5px;
 }
-.bar li a{
+.bar li a {
   text-decoration: none;
   font-size: 20px; 
 }
-.bar li img{
+.bar li img {
   margin-right: 5px;
   float: left;
 }
-.bar li span{
+.bar li span {
   float: left;
 }
-.facebook span{
+.facebook span {
   color:#667aad;
   padding-right: 8px;
 }
 
-.topmenu ul{
+.topmenu ul {
   float:right;
 }
-.topmenu ul li{
+.topmenu ul li {
   float:left;
   margin-right: 15px;
+  margin-top: 5px;
 }
-.topmenu li a{
+.topmenu li a {
   color:#667aad;
   text-decoration: none;
   font-size: 20px;
 }
 
-.clearfix{
+.clearfix {
   clear:both;
 }
 
 /*search_bar*/
+#search_bar {
+  background-color: yellow;
+  margin: 0 auto;
+  width: 1260px;
+  height: 132px;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
 form {
   position: relative;
   width: 300px;
   margin: 70px auto 50px auto;
 }
 
-.logo{
+.logo {
   float:left;
   margin-top:10px;
   margin-left:20px;
@@ -190,21 +201,22 @@ form {
   color: #F9F0DA;
 }
 
-/*價格高低*/
+/*price*/
 
-.midmenu{
+.midmenu {
+    width: 1260px;
     height:40px;
     margin-left: 50px; 
     margin-bottom: 10px;
 }
 
 
-.midmenu ul li{
+.midmenu ul li {
     float: left;   
 
 }
 
-.midmenu li a{  
+.midmenu li a {  
     display: block; 
     width: 120px; 
     color:#00cc99;
@@ -215,7 +227,7 @@ form {
       
 }
 
-/*商品和價格*/
+/*product and price*/
 
 #product ul, menu, dir {
     display: block;
@@ -237,7 +249,7 @@ form {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   -ms-flex-line-pack: start;
-  align-content: flex-start
+  align-content: flex-start;
 }
 
 .mod_price_comparison .mod_price_comparison_list {
@@ -284,7 +296,7 @@ form {
   letter-spacing: normal;
   word-spacing: normal;
   vertical-align: top;
-  text-rendering: auto
+  text-rendering: auto;
 }
 .mod_price_comparison .mod_price_comparison_list a {
     height: auto;
@@ -306,7 +318,7 @@ a {
 }
 a {
   color: #0087da;
-  text-decoration: none
+  text-decoration: none;
 }
 li {
     display: list-item;
@@ -323,33 +335,33 @@ div {
 .mod_price_comparison .mod_price_comparison_list .mod_price_comparison_container_bottom {
   border-top: 1px solid;
   padding: 10px 12px 0;
-  padding: 10px 11px 0
+  padding: 10px 11px 0;
 }
 
 
 
 .mod_price_comparison .mod_price_comparison_list a {
-  height: auto
+  height: auto;
 }
 .mod_price_comparison .mod_price_comparison_product {
   background: #fff;
   border-style: solid;
-  border-width: 3px
+  border-width: 3px;
 }
 .mod_price_comparison .mod_price_comparison_list img {
   padding-left: 40px;
   width: 150px;
   height: 150px;
   margin-top: 10px;
-  margin-top: 13px
+  margin-top: 13px;
 }
 .mod_price_comparison .mod_price_comparison_list .mod_price_comparison_container {
-  width: 100%
+  width: 100%;
 }
 
 .mod_price_comparison .mod_price_comparison_list h4 {
   margin: 10px 12px;
-  margin: 10px 11px
+  margin: 10px 11px;
 }
 
 .mod_grid_layout li h4 {
@@ -357,13 +369,13 @@ div {
   overflow: hidden;
   height: 2.8em;
   line-height: 1.4;
-  color: #1f1f1f
+  color: #1f1f1f;
 }
 
 .mod_price_comparison .mod_price_comparison_list .mod_price_comparison_items {
   counter-increment: b;
   padding-left: 1.5em;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .mod_price_comparison .mod_price_comparison_list .mod_price_comparison_items:before {
@@ -380,21 +392,21 @@ div {
   box-sizing: border-box;
   padding-left: .4em;
   padding-top: .2em;
-  font-size: 12px
+  font-size: 12px;
 }
 
 .mod_price_comparison .mod_price_comparison_list .mod_grid_layout_shop {
   vertical-align: middle;
-  line-height: 1.3
+  line-height: 1.3;
 }
 
 .mod_grid_layout li .mod_grid_layout_shop, .mod_grid_layout li .product_info {
-  color: #7f7f7f
+  color: #7f7f7f;
 }
 
 .pure-u-3-5 {
     width: 60%;
-    *width: 59.969%
+    *width: 59.969%;
 }
 
 
@@ -421,23 +433,23 @@ div {
   letter-spacing: normal;
   word-spacing: normal;
   vertical-align: top;
-  text-rendering: auto
+  text-rendering: auto;
 }
 
 .ellipsis {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .mod_grid_layout li a:hover h4 {
   color: #6f6f6f;
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .mod_promotion_list li a:hover {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .mod_grid_layout li a:hover {
@@ -454,10 +466,10 @@ div {
     word-break: break-word;
 }
 #search_tab #search_tab_container a:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 a > span:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 
