@@ -228,6 +228,15 @@ form {
 }
 
 /*product and price*/
+.container_layout_center {
+  background-color: #DCDCDC;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 1260px;
+  box-sizing: border-box;
+}
+
 
 #product ul, menu, dir {
     display: block;
@@ -237,6 +246,7 @@ form {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
+
 }
 
 .pure-g {
@@ -337,8 +347,6 @@ div {
   padding: 10px 12px 0;
   padding: 10px 11px 0;
 }
-
-
 
 .mod_price_comparison .mod_price_comparison_list a {
   height: auto;
@@ -472,7 +480,82 @@ a > span:hover {
   text-decoration: underline;
 }
 
+/*product_remind*/
+#product_remind {
+    width: 1260px;
+    margin: 0 auto;
+    padding: 28px 0 10px;
+    text-align: right;
+}
+.small {
+    font-size: 14px;
+}
 
+/*footer*/
 
+#footer #footer_container {
+    margin: 0 auto;
+    width: 1260px;
+    min-height: 197px;
+    box-sizing: border-box;
+    padding: 0 35px;
+}
+.mod_table {
+    display: table;
+}
+#footer_container #footer_nav {
+    padding: 18px 0 0 4px;
+    width: 470px;
+    height: 120px;
+    line-height: 2;
+}
+#footer_container #footer_app, #footer_container #footer_extension, #footer_container #footer_price, #footer_container #footer_nav {
+    vertical-align: top;
+}
 
-
+.pure-g {
+    letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+.pure-u-1-3 {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  width: 33.3333%;
+}
+#footer_container #footer_nav ul {
+    position: relative;
+    padding-left: 22px;
+    box-sizing: border-box;
+}
+#footer_container #footer_price {
+    margin-left: 25px;
+    padding-top: 32px;
+}
+.mod_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.small {
+    font-size: 16px;
+}
+#footer_container #footer_nav {
+    padding: 18px 0 0 4px;
+    width: 470px;
+    height: 120px;
+    line-height: 2;
+}
+#footer_container {
+    background: yellow;
+    min-width: 1260px;
+}

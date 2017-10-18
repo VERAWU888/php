@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>比價網</title>
+
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../../css/index.css">
-	<title>比價網</title>
+
 </head>
 <body>
     
@@ -33,7 +38,7 @@
 
 	<!-- 搜尋 -->
    <div id="search_bar">
-    <h4 class="logo"><a href="#">飛比</a></h4>
+    <h4 class="logo"><a href="#">比價網</a></h4>
    	<form action="">
    		<input type="text" class="search_product" placeholder="產品搜尋…" >
    		<input type="button" class="search_btn" value="搜尋">
@@ -49,200 +54,234 @@
             <li><a href="#">排序</a></li>
         </ul>
     </div>
-
 		
 
 	 <!-- 比價商品 -->
-    <div id="Product"> 
-        <ul class="mod_grid_layout mod_price_comparison pure-g theme_general_border">
+    <div id="index_container" class="container_layout_center">
+        <div id="Product"> 
+            <ul class="mod_grid_layout mod_price_comparison pure-g theme_general_border">
 
-            <!-- 第一個產品 -->
-            <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
-                <div class="mod_price_comparison_product">
-                    <a class="link_ghost" href="#">
-                        <img src="../../img/bgimg.jpg">
-                        <div class="mod_price_comparison_container">
-                            <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
-                        </div>
-                    </a>
-                        <div class="mod_price_comparison_container_bottom">
-                            <ol>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
-                                    </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                <!-- 第一個產品 -->
+                <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="mod_price_comparison_product">
+                        <a class="link_ghost" href="#">
+                            <img src="../../img/bgimg.jpg">
+                            <div class="mod_price_comparison_container">
+                                <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
+                            </div>
+                        </a>
+                            <div class="mod_price_comparison_container_bottom">
+                                <ol>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                                     <meta itemprop="priceCurrency" content="TWD">
                                         <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
-                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
                                         </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                            <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                                <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
+                                                <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
+                                            </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                    </div>
+                </li>
+                
+                <!-- 第二個產品 -->
+                <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="mod_price_comparison_product">
+                        <a class="link_ghost" href="#">
+                            <img src="../../img/bgimg.jpg">
+                            <div class="mod_price_comparison_container">
+                                <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
+                            </div>
+                        </a>
+                            <div class="mod_price_comparison_container_bottom">
+                                <ol>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                                     <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                </div>
-            </li>
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
+                                        </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                            <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                                <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
+                                                <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
+                                            </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                    </div>
+                </li>
+
+                <!-- 第三個產品 -->
+                <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="mod_price_comparison_product">
+                        <a class="link_ghost" href="#">
+                            <img src="../../img/bgimg.jpg">
+                            <div class="mod_price_comparison_container">
+                                <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
+                            </div>
+                        </a>
+                            <div class="mod_price_comparison_container_bottom">
+                                <ol>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="TWD">
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
+                                        </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                            <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                                <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
+                                                <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
+                                            </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                    </div>
+                </li> 
+
+                <!-- 第四個產品 -->
+                <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="mod_price_comparison_product">
+                        <a class="link_ghost" href="#">
+                            <img src="../../img/bgimg.jpg">
+                            <div class="mod_price_comparison_container">
+                                <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
+                            </div>
+                        </a>
+                            <div class="mod_price_comparison_container_bottom">
+                                <ol>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="TWD">
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
+                                        </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                            <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                                <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
+                                                <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
+                                            </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                    </div>
+                </li> 
+
+                <!-- 第五個產品 -->
+                <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="mod_price_comparison_product">
+                        <a class="link_ghost" href="#">
+                            <img src="../../img/bgimg.jpg">
+                            <div class="mod_price_comparison_container">
+                                <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
+                            </div>
+                        </a>
+                            <div class="mod_price_comparison_container_bottom">
+                                <ol>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="TWD">
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
+                                        </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                            <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                                <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
+                                                <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
+                                            </a>
+                                    </li>
+                                    <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="TWD">
+                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
+                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
+                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                    </div>
+                </li>    
+            </ul>
+        </div> 
+	</div>
+    
+    <!-- product_remind -->
+    <div id="product_remind" class="small">※ 因更新時間差，所有頁面顯示的價格，可能與實際價格有出入，請以實際購買網頁資料為主。</div>
+    
+    <!-- footer -->
+    <div id="footer_container" class="mod_table">
+        
+        <div id="footer_nav" class="mod_table_cell pure-g">
+            <ul class="pure-u-1-3">
+                <li><a class="" href="/about/">關於我們</a></li>
+                <li><a class="" href="/join/">加入合作</a></li>
+                <li><a class="" href="/hire/104/">加入我們</a></li>
+            </ul>
+            <ul class="pure-u-1-3">
+                <li><a class="" href="/response/" rel="nofollow">意見反映</a></li>
+                <li><a class="" href="/legal/">服務條款</a></li>
+                <li><a class="" href="/policy/">隱私權政策</a></li>
+            </ul>
+            <ul class="pure-u-1-3">
+                <li><a class="" href="#">Facebook 粉絲團</a></li>
+                <li><a class="" href="https://plus.google.com/117148950732540054227?rel=author" rel="me">Google+</a></li>
+                                                                
+            </ul>
+        </div>
+
+        <div id="footer_price" class="mod_table_cell small">
+            <a href="/">
+                <span>比價網</span>
+            </a>
+            <div class="">© 2017 比價網</div>
             
-            <!-- 第二個產品 -->
-            <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
-                <div class="mod_price_comparison_product">
-                    <a class="link_ghost" href="#">
-                        <img src="../../img/bgimg.jpg">
-                        <div class="mod_price_comparison_container">
-                            <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
-                        </div>
-                    </a>
-                        <div class="mod_price_comparison_container_bottom">
-                            <ol>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
-                                    </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="TWD">
-                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
-                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
-                                        </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                </div>
-            </li>
+        </div>
+    </div>
 
-            <!-- 第三個產品 -->
-            <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
-                <div class="mod_price_comparison_product">
-                    <a class="link_ghost" href="#">
-                        <img src="../../img/bgimg.jpg">
-                        <div class="mod_price_comparison_container">
-                            <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
-                        </div>
-                    </a>
-                        <div class="mod_price_comparison_container_bottom">
-                            <ol>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
-                                    </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="TWD">
-                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
-                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
-                                        </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                </div>
-            </li> 
-
-            <!-- 第四個產品 -->
-            <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
-                <div class="mod_price_comparison_product">
-                    <a class="link_ghost" href="#">
-                        <img src="../../img/bgimg.jpg">
-                        <div class="mod_price_comparison_container">
-                            <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
-                        </div>
-                    </a>
-                        <div class="mod_price_comparison_container_bottom">
-                            <ol>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
-                                    </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="TWD">
-                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
-                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
-                                        </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                </div>
-            </li> 
-
-            <!-- 第五個產品 -->
-            <li class="mod_price_comparison_list pure-u" itemscope="" itemtype="http://schema.org/Product">
-                <div class="mod_price_comparison_product">
-                    <a class="link_ghost" href="#">
-                        <img src="../../img/bgimg.jpg">
-                        <div class="mod_price_comparison_container">
-                            <h4 class="normal" itemprop="name">Canon EF 8-15mm f/4L fisheye USM 魚眼鏡頭</h4>
-                        </div>
-                    </a>
-                        <div class="mod_price_comparison_container_bottom">
-                            <ol>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩超級商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="32930">32,930</span>
-                                    </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="TWD">
-                                        <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                            <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">Yahoo!奇摩購物中心</span>
-                                            <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33136">33,136</span>
-                                        </a>
-                                </li>
-                                <li class="mod_price_comparison_items pure-g" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="TWD">
-                                    <a href="#" target="_blank" itemprop="url" rel="nofollow">
-                                        <span class="pure-u-3-5 ellipsis small mod_grid_layout_shop" itemprop="seller">蝦皮商城</span>
-                                        <span class="pure-u-2-5 ellipsis price large money" itemprop="price" content="33269">33,269</span>
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                </div>
-            </li>    
-        </ul>
-    </div> 
-	
 </body>
 
 <script>
