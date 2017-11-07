@@ -1,51 +1,129 @@
-<!-- <div class="test">5</div> -->
-<div class="test"></div>
 
-<script type="text/javascript" src="jquery.js"></script>
-
-<script>
-
-	// for (i = 0; i < 11; i++) {
-	// 	console.log(i);
-	// }
-
-	// for (i = 0; i<99; i++){
-	// 	console.log(i);
-	// }
-	// for (i=1; i<51; i++) {
-	// 	console.log(i);
-	// }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
 
 
-// Math.ceil show 小數點
-	// var test = 1;
-	// console.log(Math.ceil(test) == test)
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="JScript/for.js"></script>
+
+	<script>
 
 
-// Math.pow can show 2的次方
+		// for (i = 0; i < 11; i++) {
+		// 	console.log(i);
+		// }
+
+		// for (i = 0; i<99; i++){
+		// 	console.log(i);
+		// }
+		// for (i=1; i<51; i++) {
+		// 	console.log(i);
+		// }
+
+
+	// Math.ceil show 小數點
+		// var test = 1;
+		// console.log(Math.ceil(test) == test)
+
+
+	// Math.pow can show 2的次方
+		// for (i=0; i<11; i++) {
+		// 	console.log(Math.pow(2, i));
+		// }
+		
+		// 取html的div 印出5個div的內容
+	// $('.test').html('<div class="test">5</div>' +
+	// 	'<div class="test">5</div>' +
+	// 	'<div class="test">5</div>' + 
+	// 	'<div class="test">5</div>' + 
+	// 	'<div class="test">5</div>');
+
+
+
+
 	// for (i=0; i<11; i++) {
-	// 	console.log(Math.pow(2, i));
+	// 	console.log(i);
 	// }
+
+	// var y=6;
+	// for (i=0;i<y;i++){
+
+	// 	$('.test').append('<div>9</div>');
+	// }
+
+
+	// //<table></table>添加一個表格樣式來顯示乘法表
+	// document.write('<table border=0>');
+	// 	for(var i=1;i<=9;i++){
+	// 		document.write('<tr>')  //<tr></tr>表示列
+	// 			for(var j=1;j<=9;j++){
+	// 				document.write('<td>'+j+'*'+i+'='+j*i+'&nbsp;&nbsp;&nbsp;</td>'); //<td></td>表示欄
+	// 			}
+	// 		document.write('</tr>');
+	// 	}
+	// document.write('</table>');
+
+	</script>
+
+</head>
+<body>
+	<!-- <div class="test">5</div> -->
+	<div class="test"></div>
+
+<!-- 計算機 -->
+<table border=0>
+	<tr>
+		<td align="center" colspan="6">
+			<input align="" type="text" value="0" id="box">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" value="(" onClick="button('(')">
+		</td>
+		<td>
+			<input type="button" value=")" onClick="button(')')">
+		</td>
+		<td>
+			<input type="button" value="%" onClick="operBtn('%')">
+		</td>
+		<td>
+			<input type="button" value="CE" onClick="button('CE')">
+		</td>
+	</tr>
+	<tr>
+		<td><input type="button" value="7" onClick="numBtn('7')"></td>
+		<td><input type="button" value="8" onClick="numBtn('8')"></td>
+		<td><input type="button" value="9" onClick="numBtn('9')"></td>
+		<td><input type="button" value="/" onClick="operBtn('/')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="4" onClick="numBtn('4')"></td>
+		<td><input type="button" value="5" onClick="numBtn('5')"></td>
+		<td><input type="button" value="6" onClick="numBtn('6')"></td>
+		<td><input type="button" value="*" onClick="operBtn('*')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="1" onClick="numBtn('1')"></td>
+		<td><input type="button" value="2" onClick="numBtn('2')"></td>
+		<td><input type="button" value="3" onClick="numBtn('3')"></td>
+		<td><input type="button" value="-" onClick="operBtn('-')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="0" onClick="numBtn('0')"></td>
+		<td><input type="button" value="." onClick="numBtn('.')"></td>
+		<td><input type="button" value="=" onClick="equal()"></td>
+		<td><input type="button" value="+" onClick="operBtn('+')"></td>
+	</tr>
+
+</table>
 	
-	// 取html的div 印出5個div的內容
-// $('.test').html('<div class="test">5</div>' +
-// 	'<div class="test">5</div>' +
-// 	'<div class="test">5</div>' + 
-// 	'<div class="test">5</div>' + 
-// 	'<div class="test">5</div>');
 
-
-
-
-// for (i=0; i<11; i++) {
-// 	console.log(i);
-// }
-
-var y=6;
-for (i=0;i<y;i++){
-
-	$('.test').append('<div>9</div>');
-}
+</body>
+</html>
 
 
 
@@ -55,4 +133,4 @@ for (i=0;i<y;i++){
 
 
 
-</script>
+
